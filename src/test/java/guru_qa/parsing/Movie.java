@@ -1,7 +1,7 @@
 package guru_qa.parsing;
 import java.util.List;
 
-public class Quiz {
+public class Movie {
     public String Title;
     public String Year;
     public String Rated;

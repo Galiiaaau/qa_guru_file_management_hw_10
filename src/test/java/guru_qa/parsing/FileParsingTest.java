@@ -71,13 +71,13 @@ public class FileParsingTest {
         ObjectMapper mapper = new ObjectMapper();
         try (InputStream is = cl.getResourceAsStream("quiz.json");
              InputStreamReader isr = new InputStreamReader(is)) {
-            Quiz quiz = mapper.readValue(isr, Quiz.class);
-            Assertions.assertEquals("It follows", quiz.Title);
-            Assertions.assertEquals("2015", quiz.Year);
-            Assertions.assertEquals("Approved", quiz.Rated);
-            Assertions.assertEquals("25 Jun 2015", quiz.Released);
-            Assertions.assertEquals(132, quiz.Runtime);
-            Assertions.assertEquals(List.of("Horror","Supernatural","Mystery"), quiz.Genre);
+            Movie movie = mapper.readValue(isr, Movie.class);
+            Assertions.assertEquals("It follows", movie.Title);
+            Assertions.assertEquals("2015", movie.Year);
+            Assertions.assertEquals("Approved", movie.Rated);
+            Assertions.assertEquals("25 Jun 2015", movie.Released);
+            Assertions.assertEquals(132, movie.Runtime);
+            Assertions.assertEquals(List.of("Horror","Supernatural","Mystery"), movie.Genre);
         }
     }
 }
