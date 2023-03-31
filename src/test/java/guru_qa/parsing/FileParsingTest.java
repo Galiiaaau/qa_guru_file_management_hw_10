@@ -72,12 +72,12 @@ public class FileParsingTest {
         try (InputStream is = cl.getResourceAsStream("quiz.json");
              InputStreamReader isr = new InputStreamReader(is)) {
             Movie movie = mapper.readValue(isr, Movie.class);
-            Assertions.assertEquals("It follows", movie.Title);
-            Assertions.assertEquals("2015", movie.Year);
-            Assertions.assertEquals("Approved", movie.Rated);
-            Assertions.assertEquals("25 Jun 2015", movie.Released);
-            Assertions.assertEquals(132, movie.Runtime);
-            Assertions.assertEquals(List.of("Horror","Supernatural","Mystery"), movie.Genre);
+            Assertions.assertEquals("It follows", movie.title);
+            Assertions.assertEquals("2015", movie.year);
+            Assertions.assertEquals("Approved", movie.rated);
+            Assertions.assertEquals("25 Jun 2015", movie.released);
+            Assertions.assertEquals(132, movie.runtime);
+            Assertions.assertEquals(List.of("Horror","Supernatural","Mystery"), movie.genre);
         }
     }
 }

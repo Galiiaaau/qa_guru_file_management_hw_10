@@ -1,10 +1,10 @@
 {
-  "Title": "It follows",
-  "Year": "2015",
-  "Rated": "Approved",
-  "Released": "25 Jun 2015",
-  "Runtime": 132,
-  "Genre": [
+  "title": "It follows",
+  "year": "2015",
+  "rated": "Approved",
+  "released": "25 Jun 2015",
+  "runtime": 132,
+  "genre": [
     "Horror",
     "Supernatural",
     "Mystery"
